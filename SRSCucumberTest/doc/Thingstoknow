@@ -1,0 +1,12 @@
+Unique short ID generates 7 digit unique number.
+
+1) Doc File ID -> should always start with 1 or 2. Have maximum of 3 digits(Starting with 1 or 2) in feature file 
+rest all characters are appended by the Random number.
+
+2) AusType -> "LoanProspector" or "LoanProductAdvisor"
+   Aus ID -> should be 8 characters. Have a maximum of 1 digit in feature file and rest are appended by the Random number.
+   
+   AusType -> "DesktopUnderwriter" 
+   Aus ID -> should be 10 characters. Have maximum of 3 digits in feature file and rest are appended by the Random number.
+   
+3) MERSMINID -> should always 1 and max of 18 characters. Have maximum of 11 digits in feature file and rest are appended by the Random number.

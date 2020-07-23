@@ -1,0 +1,17 @@
+package utils.data.jaxbhelper;
+
+import java.util.Properties;
+
+import com.freddiemac.datamanager.jaxb.PrimaryMarketLoanSubmissionPropertyAddressContainer;
+
+public class PrimaryMarketLoanSubmissionPropertyAddressContainerHelper {
+
+	public static PrimaryMarketLoanSubmissionPropertyAddressContainer getprimaryMarketLoanSubmissionPropertyAddressContainer(
+			Properties properties) {
+		PrimaryMarketLoanSubmissionPropertyAddressContainer primaryMarketLoanSubmissionPropertyAddressContainer = new PrimaryMarketLoanSubmissionPropertyAddressContainer();
+		primaryMarketLoanSubmissionPropertyAddressContainer.setAddress(AddressHelper.getAddress(properties));
+		primaryMarketLoanSubmissionPropertyAddressContainer
+				.setAppraisalContainers(AppraisalContainersHelper.getAppraisalContainers(properties));
+		return primaryMarketLoanSubmissionPropertyAddressContainer;
+	}
+}
